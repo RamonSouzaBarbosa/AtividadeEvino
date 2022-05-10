@@ -7,7 +7,7 @@ describe ('Corta Gotas', function() {
 		cy.get('.Large .FormControl').type('ramon.souza-b@hotmail.com');
 		cy.get('.loginSpinner').click();
 		cy.wait(2000)
-		
+
 		//Pesquisar item
 		cy.get('.NavigationSearch__form').type('Gran Anciano Oak Matured Tempranillo Valdepeñas DOP 2019');
 		cy.wait(2000);
@@ -32,7 +32,7 @@ describe ('Corta Gotas', function() {
 			
 	})
 
-	it('Esvaziar EvinoBOX ', function() {
+	it('Validar quantidade de corta após remover um item', function() {
 		cy.viewport(1280,800);
 		cy.visit('https://www.evino.com.br/');
 		cy.get('.Large .FormControl').type('ramon.souza-b@hotmail.com');
